@@ -1,3 +1,33 @@
-export const MOVIE_LIST = [{
-    
-}]
+export const MOVIE_LIST =
+    [
+    {'cast_id': 14, 
+    'character': 'Woody (voice)', 
+    'credit_id': '52fe4284c3a36847f8024f95', 
+    'gender': 2, 
+    'id': 31, 
+    'name': 'Tom Hanks', 
+    'order': 0, 
+    'profile_path': '/pQFoyx7rp09CJTAb932F2g8Nlho.jpg'}, 
+    {'cast_id': 15, 
+    'character': 'Buzz Lightyear (voice)', 
+    'credit_id': '52fe4284c3a36847f8024f99', 
+    'gender': 2, 
+    'id': 12898, 
+    'name': 'Tim Allen', 
+    'order': 1, 
+    'profile_path': '/uX2xVf6pMmPepxnvFWyBtjexzgY.jpg'}, 
+    {'cast_id': 16, 'character': 'Mr. Potato Head (voice)', 
+    'credit_id': '52fe4284c3a36847f8024f9d', 'gender': 2, 
+    'id': 7167, 
+    'name': 'Don Rickles', 
+    'order': 2,
+    'profile_path': '/h5BcaDMPRVLHLDzbQavec4xfSdt.jpg'}, 
+    {'cast_id': 17, 
+    'character': 'Slinky Dog (voice)', 
+    'credit_id': '52fe4284c3a36847f8024fa1', 
+    'gender': 2, 
+    'id': 12899, 
+    'name': 'Jim Varney', 
+    'order': 3, 
+    'profile_path': '/eIo2jVVXYgjDtaHoF19Ll9vtW7h.jpg'}
+]
