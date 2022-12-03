@@ -1,13 +1,45 @@
-import React from 'react';
-import './list.css';
-import { Link } from 'react-router-dom';
+import './list.css';  
+import axios from 'axios';
+import { Card } from '../Component/card';
+import { MOVIE_LIST } from '../Component/data';
+import React, { useEffect, useState } from 'react';
 
-export const list = () => {
+// export const instance = axios.create()
+
+function List() {
+  const [data, setData] = useState([]);
+  const movie = MOVIE_LIST;
+
+  const getData = async () => {
+    try {
+      setData(movie)
+      console.log(movie)
+    } 
+    catch (error) {
+      alert("error")
+    }
+  }
+  useEffect(() => {
+    getData()
+  }, []);
+
     return (
-        <div className='listContainer'>
-          <Link to={"movie"}>Watch</Link>
+        <div className='listAllContainer'>
+          <div className='listContainer'>
+            {
+              data.map((cur) => 
+              <Card 
+              img={cur.img}
+              name={cur.name}
+              year={cur.year}
+              time={cur.runtime}
+              id={cur.id}
+              />)
+            }
+          <Card />
+          </div>
         </div>
 
     )
 }
-export default list;
+export default List;

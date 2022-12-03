@@ -12,7 +12,7 @@ root.render(
     <BrowserRouter>
         <Routes>
           <Route path='/list' element={<List />} />
-          <Route path='/list/movie/:id' element={<Movie />} />
+          {/* <Route path='https://fmoviesto.site/:id' element={<Movie />} /> */}
           <Route path='/' element={<App /> } />
         </Routes>
     </BrowserRouter>

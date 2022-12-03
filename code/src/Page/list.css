@@ -1,0 +1,13 @@
+.listAllContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.listContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80vw;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import './movie.css';
 import { Link } from 'react-router-dom';
 
-export const movie = () => {
+export const Movie = () => {
     return (
         <div className='movieContainer'>
             
@@ -10,4 +10,4 @@ export const movie = () => {
 
     )
 }
-export default movie;
+export default Movie;

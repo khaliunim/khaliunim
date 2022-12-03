@@ -1,0 +1,49 @@
+.cardAllContainer{
+    margin-bottom: 30px;
+    color: #fff;
+    margin-top: 30px;
+}
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    height: 5vh;
+    justify-content: space-around;
+}
+.name{
+    font-size: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    width: 12vw;
+    justify-content: space-between;
+    font-size: 15px;
+}
+img{
+    width: 12vw;
+    cursor: pointer;
+}
+.dot{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #fff;
+}
+.float-right{
+    width: 3vw;
+    height: 2vh;
+    border-radius: 3px;
+    border-color: #bbb;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #bbb;
+}
+.date{
+    width: 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
