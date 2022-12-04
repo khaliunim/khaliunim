@@ -1,6 +1,5 @@
 import React from 'react';
 import './card.css';
-import { Link } from 'react-router-dom';
 
 export const Card = ({name, img, year, time, id}) => {
 

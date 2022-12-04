@@ -1,6 +1,6 @@
 import './list.css';  
 import axios from 'axios';
-import { Card } from '../Component/card';
+import { Card } from '../Component/Card';
 import { MOVIE_LIST } from '../Component/data';
 import React, { useEffect, useState } from 'react';
 
@@ -25,6 +25,7 @@ function List() {
 
     return (
         <div className='listAllContainer'>
+          <h1 className='title'>Trending</h1>
           <div className='listContainer'>
             {
               data.map((cur) => 
@@ -36,8 +37,20 @@ function List() {
               id={cur.id}
               />)
             }
-          <Card />
           </div>
+          <h1 className='title'>Latest Movies</h1>
+          {/* <div className='listContainer'>
+            {
+              data.map((cur) => 
+              <Card 
+              img={cur.img}
+              name={cur.name}
+              year={cur.year}
+              time={cur.runtime}
+              id={cur.id}
+              />)
+            }
+          </div> */}
         </div>
 
     )

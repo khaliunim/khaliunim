@@ -1,26 +1,26 @@
 .cardAllContainer{
-    margin-bottom: 30px;
     color: #fff;
-    margin-top: 30px;
+    width: 11vw;
+    height: 38vh;
 }
 .cardContainer{
     display: flex;
     flex-direction: column;
-    height: 5vh;
+    height: 6vh;
     justify-content: space-around;
 }
 .name{
-    font-size: 10px;
+    font-size: 15px;
 }
 .info{
     display: flex;
     flex-direction: row;
-    width: 12vw;
+    width: 10vw;
     justify-content: space-between;
-    font-size: 15px;
+    font-size: 14px;
 }
 img{
-    width: 12vw;
+    width: 10vw;
     cursor: pointer;
 }
 .dot{
@@ -30,7 +30,7 @@ img{
     background: #fff;
 }
 .float-right{
-    width: 3vw;
+    width: 2.5vw;
     height: 2vh;
     border-radius: 3px;
     border-color: #bbb;
@@ -39,6 +39,8 @@ img{
     justify-content: center;
     align-items: center;
     color: #bbb;
+    border-width: 1px;
+    font-size: 13px;
 }
 .date{
     width: 6vw;
@@ -46,4 +48,7 @@ img{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+img:hover{
+    opacity: 0.5;
 }

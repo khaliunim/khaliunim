@@ -1,13 +1,20 @@
 .listAllContainer{
     width: 100vw;
     display: flex;
-    justify-content: center;
-    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
 }
 .listContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: 80vw;
+}
+.title{
+    display: flex;
+    width: 80vw;
+    justify-content: start;
+    color: #fff;
 }

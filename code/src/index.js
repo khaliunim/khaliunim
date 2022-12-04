@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import List from './/Page/list'
-import Movie from './Page/movie'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +11,6 @@ root.render(
     <BrowserRouter>
         <Routes>
           <Route path='/list' element={<List />} />
-          {/* <Route path='https://fmoviesto.site/:id' element={<Movie />} /> */}
           <Route path='/' element={<App /> } />
         </Routes>
     </BrowserRouter>
