@@ -2,6 +2,7 @@ import './App.css';
 import tv from './Image/tv.png'
 import el from './Image/eleven.jpg'
 import luna from './Image/luna.png'
+import plus from './Image/plus.png'
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
 
               <div className='headerContainer'>
                 <div className='netflix'>Netflix</div>
-                <button className='signUp'>Sign in</button>
+                <button className='signUp'>Movies</button>
               </div>
 
               <div className='midheadCon'>
@@ -71,21 +72,86 @@ function App() {
         </div>
 
         <div className='dash'></div>
-        <div>
-          <div style={{color: "white" , fontSize: '3.125rem' , lineHeight: "1.1", marginBottom: "0.5rem" , fontWeight: "700"}}>Frequently Asked Questions</div>
-          <div>
-            <div>
-              <div>What is Neflix?</div>
-              <div></div>
+        <div className='LastSec'>
+          <div className='questions'>Frequently Asked Questions</div>
+          <div className='infoBoutNetflix'>
+            <div className='per'>
+              
+              <div className='WhatIsNetflix'>
+                <div style={{fontSize: '25px' , fontWeight: "400"}}>What is Neflix?</div>
+                <img src={plus} className='plus'></img>
+              </div>
+              <div className='WhatIsNetflix'>
+                <div style={{fontSize: '25px' , fontWeight: "400"}}>How much does Netflix cost?</div>
+                <img src={plus} className='plus'></img>
+              </div>
+
+              <div className='WhatIsNetflix'>
+                <div style={{fontSize: '25px' , fontWeight: "400"}}>Where can i watch</div>
+                <img src={plus} className='plus'></img>
+              </div>
+
+              <div className='WhatIsNetflix'>
+                <div style={{ marginLeft: '10px' , fontSize: '25px' , fontWeight: "400"}}>How do i cancel?</div>
+                <img src={plus} className='plus'></img>
+              </div>
+
+              <div className='WhatIsNetflix'>
+                <div style={{fontSize: '25px' , fontWeight: "400"}}>What can i watch on Neflix?</div>
+                <img src={plus} className='plus'></img>
+              </div>
+
+              <div className='WhatIsNetflix'>
+                <div style={{fontSize: '25px' , fontWeight: "400"}}>Is Netflix good for kids?s</div>
+                <img src={plus} className='plus'></img>
+              </div>
+
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
           </div>
           <div></div>
+        <div className='start'>
+          <div className='ready'>Ready to watch? Enter your email to create or restart your membership.</div>
+          <div className='email'>
+            <input className='input'></input>
+            <button className='button'>Get Start</button>
+          </div>
         </div>
+        </div>
+
+        <div className='dash'></div>
+
+        <div className='mainFooter'>
+          <div className='Footer'>
+            <div className='gap'>Questions? Contact us.</div>
+            <div className='row'>
+              <div className='column'>
+                <div className='gap'>FAQ</div>
+                <div className='gap'>Investor Relations</div>
+                <div className='gap'>Privacy</div>
+                <div className='gap'>Speed Test</div>
+              </div>
+              <div>
+                <div className='gap'>Help Center</div>
+                <div className='gap'>Jobs</div>
+                <div className='gap'>Cookie Preferences</div>
+                <div className='gap'>Legal Notices</div>
+              </div>
+              <div>
+                <div className='gap'>Account</div>
+                <div className='gap'>Ways To Watch</div>
+                <div className='gap'>Corporate Information</div>
+                <div className='gap'>Only on Netflix</div>
+              </div>
+              <div>
+                <div className='gap'>Media Center</div>
+                <div className='gap'>Terms of Use</div>
+                <div className='gap'>Contact Us</div>
+              </div>
+            </div>
+            <div className='gap'>Netflix Mongolia</div>
+          </div>
+        </div>
+        
       </div>
     </div>
   );
