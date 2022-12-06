@@ -1,4 +1,4 @@
-export const MOVIE_LIST =
+export const MOVIE_TREND =
     [
     {
         name: "Black Adam",
@@ -188,23 +188,5 @@ export const MOVIE_LIST =
         solar_rad: 0,
         ozone: 273.5,
         id: "he-kings-man"
-      },
-      {
-        name: "Purple Hearts",
-        runtime: "122",
-        year: "2022",
-        img: "https://fmoviesto.site/_sf/225/04366822.jpg",
-        solar_rad: 0,
-        ozone: 273.5,
-        id: "purple-hearts"
-      },
-      {
-        name: "Morbius",
-        runtime: "104",
-        year: "2022",
-        img: "https://fmoviesto.site/_sf/185/79730336.jpg",
-        solar_rad: 0,
-        ozone: 273.5,
-        id: "morbius"
-      },
+      }
 ]

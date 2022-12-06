@@ -1,19 +1,23 @@
 import './list.css';  
 import axios from 'axios';
 import { Card } from '../Component/Card';
-import { MOVIE_LIST } from '../Component/data';
+import { MOVIE_TREND } from '../Component/data';
 import React, { useEffect, useState } from 'react';
+import { MOVIE_LATE } from '../Component/lateData'
 
 // export const instance = axios.create()
 
 function List() {
-  const [data, setData] = useState([]);
-  const movie = MOVIE_LIST;
+  const [ldata, setLateData] = useState([]);
+  const [tdata, setTrendData] = useState([]);
+  const tmovie = MOVIE_TREND;
+  const lmovie = MOVIE_LATE;
 
-  const getData = async () => {
+  const getData = () => {
     try {
-      setData(movie)
-      console.log(movie)
+      setTrendData(tmovie)
+      setLateData(lmovie)
+      console.log(tmovie, lmovie)
     } 
     catch (error) {
       alert("error")
@@ -28,7 +32,7 @@ function List() {
           <h1 className='title'>Trending</h1>
           <div className='listContainer'>
             {
-              data.map((cur) => 
+              tdata.map((cur) => 
               <Card 
               img={cur.img}
               name={cur.name}
@@ -39,9 +43,9 @@ function List() {
             }
           </div>
           <h1 className='title'>Latest Movies</h1>
-          {/* <div className='listContainer'>
+          <div className='listContainer'>
             {
-              data.map((cur) => 
+              ldata.map((cur) => 
               <Card 
               img={cur.img}
               name={cur.name}
@@ -50,7 +54,7 @@ function List() {
               id={cur.id}
               />)
             }
-          </div> */}
+          </div>
         </div>
 
     )
