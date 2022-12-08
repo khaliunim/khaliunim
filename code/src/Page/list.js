@@ -1,9 +1,10 @@
 import './list.css';  
 import axios from 'axios';
 import { Card } from '../Component/Card';
-import { MOVIE_TREND } from '../Component/data';
+import { MOVIE_TREND } from '../Component/trendData';
 import React, { useEffect, useState } from 'react';
 import { MOVIE_LATE } from '../Component/lateData'
+import { Link } from 'react-router-dom';
 
 // export const instance = axios.create()
 
@@ -29,7 +30,11 @@ function List() {
 
     return (
         <div className='listAllContainer'>
-          <h1 className='title'>Trending</h1>
+          <div className='header'>
+            <h1 className='title'>Trending</h1>
+            <Link to={"/"}><button className='back'>Home</button></Link>
+          </div>
+
           <div className='listContainer'>
             {
               tdata.map((cur) => 
