@@ -1,0 +1,36 @@
+.listAllContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+}
+.listContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80vw;
+}
+.title{
+    display: flex;
+    width: 80vw;
+    justify-content: start;
+    color: #fff;
+}
+.back{
+    width: 73px;
+    height: 33px;
+    border-radius: 10%;
+    border-style: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.header{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
