@@ -13,7 +13,7 @@ function App() {
             <div className='head'>
 
               <div className='headerContainer'>
-                <div className='netflix'>Netflix</div>
+                <div className='netflix'>Xmovie</div>
                 <Link to={'/list'}><button className='signUp'>Movies</button></Link>
               </div>
 
