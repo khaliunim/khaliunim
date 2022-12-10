@@ -19,11 +19,12 @@
     color: #fff;
 }
 .back{
-    width: 73px;
-    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10%;
     border-style: none;
-    background-color: red;
+    font-size: 20px;
     color: white;
     cursor: pointer;
 }
@@ -33,4 +34,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+.xmovie{
+    color: #fff;
+    font-size: 80px;
+    color: #e40a15;
+}
+.search{
+    width: 15vw;
+    height: 4vh;
+    border-radius: 20px;
+    padding-left: 18px;
+    background-color: #ffffff33;
+    border: none;
 }
